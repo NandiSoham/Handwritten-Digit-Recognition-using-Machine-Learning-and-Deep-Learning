@@ -1,10 +1,10 @@
-from keras.models import Sequential
+from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Input, Conv2D, Flatten, MaxPool2D, Dropout, BatchNormalization, Dense
-from keras.datasets import mnist
-from keras.utils import to_categorical
-from keras.optimizers import Adam
+from tensorflow.keras.datasets import mnist
+from tensorflow.keras.utils import to_categorical
+from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
-from keras.callbacks import EarlyStopping, ReduceLROnPlateau
+from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
 
 # Load and preprocess the MNIST data
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
